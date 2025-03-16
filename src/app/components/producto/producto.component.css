@@ -1,0 +1,106 @@
+/* Fondo gris para toda la página */
+body {
+    background-color: #807b7b;  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Fondo gris también para la sección de productos */
+.productos-container {
+    background-color: #807b7b;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Contenedor de productos */
+.producto-card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes de los productos */
+.producto-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Nombre del producto */
+.producto-nombre {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Precio del producto */
+.producto-precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 5px 0;
+}
+
+/* Botón de agregar al carrito */
+.agregar-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.agregar-button:hover {
+    background-color: #c9302c;
+}
+
+/* Contenedor de los botones */
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+/* Botones en verde centrados */
+.boton-accion {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton-accion:hover {
+    background-color: #218838;
+}
+
+/* Icono del carrito */
+.carrito-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
