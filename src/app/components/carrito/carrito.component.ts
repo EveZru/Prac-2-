@@ -23,6 +23,4 @@ import { Producto } from '../../models/producto';
       this.carritoService.descargarXML(xml);
     }
 
-    
-    
 }

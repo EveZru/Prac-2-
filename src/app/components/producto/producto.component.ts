@@ -22,16 +22,23 @@ export class ProductoComponent implements OnInit {
     private productoService:ProductoService,
     private carritoService:CarritoService,
     private router:Router){}
+
     ngOnInit(): void {
-      this.productoService.obtenerProductos().subscribe({
-        next: (productos) => {
+      this.productoService.obtenerProductos().subscribe(data=>{
+        this.productos=data as any[];
+      })
+    }
+   /* ngOnInit(): void {
+      this.productoService.obtenerProductos().subscribe(
+        {next: (productos) => {
           this.productos = productos;
         },
         error: (error) => {
           console.error('Error al obtener los productos', error);
         }
-      });
-    }
+      }
+    );
+    }*/
   agregarAlCarrito(producto:Producto){
     this.carritoService.agregarProducto(producto);
   }
